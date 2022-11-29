@@ -7,17 +7,17 @@
   </p>
 
 ```bash
-> neofetch
+> Discord ID > 1022443390878617622
 ```
 
 <img src="https://i.pinimg.com/originals/a1/40/ee/a140ee26a75a87b6fdbdd2aa667c4b4b.gif" align="left" alt="neonnano.php.png" width="250" height="250">
 
 ```py
-Plasmonix@github
+AKnull > Surpass Da Limit
 ----------------
 
            OS  :  Windows
-       Region  :  ?????????
+     language  :  EN/RU/TR/TH/ID/PL/PH
      Timezone  :  Arizona
  Organization  :  Cowboybepop
            WR  :  85% / Year
