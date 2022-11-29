@@ -3,7 +3,7 @@
   <a href="https://www.instagram.com/nov.xnr/">Instagram</a> |
   <a href="https://discord.gg/v4GS8HyX6Z">Discord</a> |
   <a href="https://github.com/MNovan">Github</a><br><br>
-  <img src="https://i.pinimg.com/originals/d6/88/45/d68845f804446649d52eb4085678eb3c.gif" width="600">
+  <img src="https://i.pinimg.com/originals/d6/88/45/d68845f804446649d52eb4085678eb3c.gif" width="1000">
   </p>
 
 ```bash
