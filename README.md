@@ -12,19 +12,7 @@
 
 <img src="https://i.ibb.co/VYYQv8L/MNOVAN.gif" align="left" alt="neonnano.php.png" width="250" height="250">
 
-```py
-AKnull > Surpass Da Limit
-----------------
 
-           OS  :  Windows
-         Lang  :  EN/RU/TR/TH/ID/PL/PH
-     Timezone  :  Arizona
- Organization  :  Cowboybepop
-           WR  :  85% / Year
-        Alias  :  MN
-        Infos  :  Y -U- C ME
-    Languages  :  Python And other 👿
-```
 <hr>
 
 <p align="left">
