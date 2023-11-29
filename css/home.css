@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline:none;
+    border: none;
+    box-sizing: border-box;
+    font-style: normal;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+:root {
+    --poppins:'Poppins', sans-serif;
+    --quicksand: 'Quicksand', san-serif ;
+    --green: #01875f;
+    --blue: #1a73e8;
+    --light-grey:#5f6368;
+    --dark-grey:#333 ;
+    --black: #000000de ;
+    --white : #FFFFFF;
+    --light-white:#F0F0F0 ;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family:'Poppins', sans-serif;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dark-grey);
+    background-color: var(--white);
+    padding: 15px 20px;
+    box-shadow:0px 0px 3px 2px grey;
+    transition: 0.3s delay ease-in-out;
+}
+header li {
+    list-style: none;
+}
+header div , header .left-header , header .middle-header, header .right-header , header .left-header nav , header .right-header li  {
+    display: flex;
+    align-items: center;
+}
+
+header .left-header img {
+    width: 170px;
+    height: 42px;
+}
+header .left-header nav li{
+    list-style: none;
+    color: var(--light-grey);
+    font-weight: 497;
+    font-size: 13px;
+    margin: 20px;
+    height:inherit;
+    align-items: center;
+}
+
+header .left-header .active , header .left-header li:active {
+    color: var(--green);
+    border-bottom: 3px solid var(--green);
+    padding-bottom: 19px;
+}
+
+
+header .middle-header {
+    display: none;
+}
+
+
+
+
+header .right-header li {
+    margin: 13px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+header .right-header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* main */
+main {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    padding: 40px 60px;
+    background-color: var(--white);
+}
+
+/* device categories */
+main .device-categories {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+main .device-categories li {
+    list-style: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 480;
+    color: var(--light-grey);
+    white-space: nowrap;
+    margin-right: 10px;
+}
+.device-categories li a {
+    border-radius: 25px;
+    padding: 8px 18px;
+}
+.device-categories li .active {
+    color: var(--green);
+    background: var(--light-white);
+}
+.device-categories i {
+    margin-right: 12px;
+}
+.device-categories li a:hover {
+    background: var(--light-white);
+}
+
+
+/* app container */
+main .app-container {
+    width: calc(100%-120px);
+    display: block;
+    align-items: center;
+    margin-bottom: 50px;
+    overflow-x: hidden;
+}
+
+.app-container .header {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    color: var(--dark-grey);
+}
+.app-container .header b {
+    font-weight: 499;
+    font-size: 21px;
+}
+.app-container .header .fa-arrow-right {
+    display: none;
+}
+
+.app-container .app-holder-container {
+    width: calc(100%-120px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    position: relative;
+    background-color: var(--white);
+}
+
+.app-holder-container .fa-angle-left , .app-holder-container .fa-angle-right {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+    padding: 15px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    cursor: pointer;
+    border: 2px solid var(--light-white);
+    z-index: 10;
+    top: 85px;
+    overflow: visible;
+}
+.app-holder-container:hover .fa-angle-left , .app-holder-container:hover .fa-angle-right {
+    display: flex;
+}
+.app-holder-container .fa-angle-left:hover , .app-holder-container .fa-angle-right:hover {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+.app-holder-container .fa-angle-left {
+    position: absolute;
+    left: -10px; 
+}
+.app-holder-container .fa-angle-right {
+    position: absolute;
+    right: -10px;
+}
+
+
+.app-holder-container .app-box-model {
+    width: 210px ;
+    display:block;
+    align-self: center;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--dark-grey);
+}
+.app-holder-container .app-box-model:hover {
+    background-color: var(--light-white);
+    border-radius: 10px;
+}
+.app-holder-container .app-box-model img {
+    width: 180px;
+    height: 180px;
+    border-radius: 35px;
+    border: 3px solid var(--light-white);
+}
+
+.app-holder-container .app-box-model .app-name , .app-holder-container .app-box-model .app-rating{
+    width: 100%;
+    align-items: center;
+    font-weight: 499;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.app-box-model .app-rating i{
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* **************** responsive design */
+@media only screen and (max-width: 768px) {
+
+    ::-webkit-scrollbar {
+        width:0px;
+        height: 0px;
+        display: none;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background:transparent; 
+    }
+    body {
+        height:100%;
+        overflow-y: scroll;
+        padding-bottom: 10px;
+        cursor: none;
+    }
+    img {
+        cursor: none;
+    }
+    a:link, a:visited,  a:hover, a:active , a:hover{
+        background: transparent !important;
+    }
+
+    /* header */
+    header {
+        width: 100%;
+        height: 60px;
+        top: 0px;
+        left: 0px;
+        position: fixed;
+        padding: 10px 10px;
+    }
+    header .left-header nav li {
+        display: none;
+        margin: 10px;
+    }/*
+    header .right-header li:nth-child(1) ,header .right-header li:nth-child(2) {
+        display: none;
+    }*/
+
+    /* main */
+    main {
+        padding: 10px 10px;
+    }
+
+    main .device-categories {
+       display: none;
+    }
+
+    main .app-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .app-container .header b {
+        white-space: nowrap;
+        width: 80%;
+    }
+
+    .app-container .header .fa-arrow-right {
+        display: flex;
+    }
+
+    .app-container .app-holder-container {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .app-holder-container .fa-angle-left, .app-holder-container .fa-angle-right {
+        display: none;
+    }
+}

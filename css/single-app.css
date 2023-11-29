@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline:none;
+    border: none;
+    box-sizing: border-box;
+    font-style: normal;
+    -webkit-tap-highlight-color: transparent;
+}
+::-webkit-scrollbar {
+    width:5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: var(--grey); 
+}
+::-webkit-scrollbar-thumb {
+    background:var(--grey); 
+}
+
+:root {
+    --poppins:'Poppins', sans-serif;
+    --quicksand: 'Quicksand', san-serif ;
+    --green: #01875f;
+    --blue: #1a73e8;
+    --light-grey:#5f6368;
+    --dark-grey:#333 ;
+    --black: #000000de ;
+    --white : #FFFFFF;
+    --light-white:#F0F0F0 ;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family:'Poppins', sans-serif;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dark-grey);
+    background-color: var(--white);
+    padding: 15px 20px;
+    box-shadow:0px 0px 3px 2px grey;
+    transition: 0.3s delay ease-in-out;
+}
+header li {
+    list-style: none;
+}
+header div , header .left-header , header .middle-header, header .right-header , header .left-header nav , header .right-header li  {
+    display: flex;
+    align-items: center;
+}
+
+header .left-header img {
+    width: 170px;
+    height: 42px;
+}
+header .left-header nav li{
+    list-style: none;
+    color: var(--light-grey);
+    font-weight: 497;
+    font-size: 13px;
+    margin: 20px;
+    height:inherit;
+    align-items: center;
+}
+
+header .left-header .active , header .left-header li:active {
+    color: var(--green);
+    border-bottom: 3px solid var(--green);
+    padding-bottom: 19px;
+}
+
+
+header .middle-header {
+    display: none;
+}
+
+
+
+
+header .right-header li {
+    margin: 13px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+header .right-header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* main */
+main {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    padding: 40px 60px;
+    background-color: var(--white);
+}
+
+main .single-app-metadata {
+    width: calc(100%-120px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+main .single-app-metadata img {
+    border-radius: 55px;
+}
+.single-app-metadata .app-name {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.single-app-metadata .single-app-stats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.single-app-metadata .single-app-stats div {
+    margin-right: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* **************** responsive design */
+@media only screen and (max-width: 768px) {
+
+    ::-webkit-scrollbar {
+        width:0px;
+        height: 0px;
+        display: none;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background:transparent; 
+    }
+    body {
+        height:100%;
+        overflow-y: scroll;
+        padding-bottom: 10px;
+        cursor: none;
+    }
+    img {
+        cursor: none;
+    }
+    a:link, a:visited,  a:hover, a:active , a:hover{
+        background: transparent !important;
+    }
+
+    /* header */
+    header {
+        width: 100%;
+        height: 60px;
+        top: 0px;
+        left: 0px;
+        position: fixed;
+        padding: 10px 10px;
+    }
+    header .left-header nav li {
+        display: none;
+        margin: 10px;
+    }/*
+    header .right-header li:nth-child(1) ,header .right-header li:nth-child(2) {
+        display: none;
+    }*/
+
+    /* main */
+    main {
+        padding: 10px 10px;
+    }
+}
